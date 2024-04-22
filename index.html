@@ -12,17 +12,22 @@
         <h1>Niko's <span class="highlight">Weather Dashboard</span></h1>
     </header>
 
-    <section class="search-container">
+    <section class="container has-background-white">
         <div class="columns">
-            <div class="column is-3 has-text-left">
-                <h2>Search for a City:</h2>
-                    <input class="input is-default" type="text" placeholder="City Name"></input>
-                    <button class="button is-primary is-large is-fullwidth is-responsive" type="submit">Search</button>
+            <div class="block column is-3 has-text-left">
+                <h2><b>Search for a City:</b></h2>
+                    <input class="input is-default block" type="text" placeholder="City Name"></input>
+                    <button id="searchButton" class="button is-primary is-large is-fullwidth is-responsive block" type="submit">Search</button>
+                <div class="pinned-cities"></div>
             </div>
+            <div class="column is-8 has-text-left">
+                <div class="city-data block"><span style="color: orange">&#x2600;</span></div>
+                <div class="five-day block"></div>
+                    <h2 class="subtitle">5-Day Forecast:</h2>
         </div>
     </section>
 
-    <section class="results-container"
+   <script src="./assets/js/script.js"></script>
 
 
 
