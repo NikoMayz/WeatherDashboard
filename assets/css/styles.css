@@ -1,25 +1,43 @@
-body{
-
+body {
     padding: 1rem;
     font-family: 'Times New Roman', Times, serif;
-
-}
-h2{
-
+  }
+  
+  header {
+    padding: 1rem;
+  }
+  
+  h2 {
     color: black;
     font-size: 20px;
-    
-
-}
-
-.input{
-
-    background-color: black;
-}
-
-.input::placeholder {
-
-    color: darkgray;  /* Change 'grey' to whatever color you prefer */
-    opacity: 1;   /* Ensure the color isn't semi-transparent */
+  }
+  
+  .input {
+    background-color: white;
+  }
+  
+  .input::placeholder {
+    color: darkgray;
+    opacity: 1;
+  }
+  
+  /* Adjustments for Bootstrap grid */
+  .container {
+    max-width: 1140px; /* Optional: Adjust container width */
+  }
+  
+  .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .col-md-3,
+  .col-md-9 {
+    padding: 0 0.5rem;
+  }
+  
+  /* Adjustments for Bulma grid */
+  .block {
+    margin-bottom: 1rem;
   }
   

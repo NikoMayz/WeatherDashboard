@@ -89,6 +89,8 @@ function displayForecast(data) {
         const humidity = dayData.main.humidity;
         const weatherIcon = dayData.weather[0].icon; // Get weather icon code
 
+        
+
 
         // Create a card for each day's forecast
         const icon = document.createElement('img');
