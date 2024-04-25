@@ -10,8 +10,8 @@ const APIKey = "46a9fd4bc168e3e4a27f122d86d96c11";
 
 function weatherSearch() {
     const city = document.querySelector(".input").value.trim(); // Trim to remove leading/trailing whitespace
-    const currentWeatherURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=imperial`;
-    const forecastURL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}&units=imperial`;
+    const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=imperial`;
+    const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}&units=imperial`;
 
     fetch(currentWeatherURL)
     .then(response => {
@@ -55,7 +55,7 @@ function displayCurrentWeather(data) {
 
     // Display weather icon
     const weatherIconCode = data.weather[0].icon;
-    const weatherIconURL = `http://openweathermap.org/img/wn/${weatherIconCode}.png`;
+    const weatherIconURL = `https://openweathermap.org/img/wn/${weatherIconCode}.png`;
     const weatherIcon = document.createElement('img');
     weatherIcon.src = weatherIconURL;
     weatherIcon.alt = "Weather Icon";
@@ -94,7 +94,7 @@ function displayForecast(data) {
 
         // Create a card for each day's forecast
         const icon = document.createElement('img');
-        icon.src = `http://openweathermap.org/img/wn/${weatherIcon}.png`; // Set src attribute to the icon URL
+        icon.src = `https://openweathermap.org/img/wn/${weatherIcon}.png`; // Set src attribute to the icon URL
         icon.alt = "Weather Icon";
 
         const forecastCard = document.createElement('div');

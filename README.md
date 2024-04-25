@@ -49,8 +49,8 @@ There is a "Clear" button available to clear the search history.
 # <h3>Credits<h3>
 
     Created by Michael Young https://github.com/NikoMayz
-    https://nikomayz.github.io/WeatherDashboard
-
+    https://nikomayz.github.io/WeatherDashboard/
+    
 # <h3>License<h3>
 
 This project is licensed under the MIT License - see the LICENSE file for details.
